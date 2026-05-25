@@ -1,0 +1,9 @@
+The sample mean (0.4903) is extremely close to the theoretical 
+mean (0.5), showing that the expectation is the "long-run" average 
+the random variable converges to over many trials. 
+
+The variance tells us how much the data "spreads out" from the 
+center. In the tight graph (Var: 0.0034), the numbers are 
+squished near 0.5, while in the wide graph (Var: 0.0853), 
+they cover the whole range. Higher variance simply means the 
+data is more scattered and less predictable.

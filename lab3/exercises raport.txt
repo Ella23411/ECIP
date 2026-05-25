@@ -1,0 +1,53 @@
+1) The randomness in the NumPy code is actually pseudorandom, which means a mathematical formula (an algorithm) is used to pick the numbers.
+ It’s not "true" randomness like flipping a coin in real life, but it’s close enough for most projects. Since we used a uniform distribution,
+  every number between 0 and 1 has an equal shot of being picked. With only 1,000 numbers, the histogram looks a little bumpy or "noisy,"
+ but that’s just basic variance. If we bumped it up to 100,000, the bars would level out and look way flatter because of the Law of Large Numbers.
+
+ 2)The histogram looks like a flat rectangle because the distribution is Uniform, meaning every value between 0 and 1 has an equal 
+chance of being picked. While it’s slightly "bumpy" due to random chance with only 1,000 samples, it would look perfectly flat 
+if we generated millions of numbers.
+
+3)The sample mean (0.5021) is extremely close to the theoretical mean (0.5), 
+showing that the expectation is the "long-run" average the random 
+variable converges to over many trials. This small difference is just 
+normal randomness, and according to the Law of Large Numbers, the 
+result would get even closer to 0.5 if we added more samples.
+
+4)The theoretical variance for a Uniform(0,1) distribution is 
+exactly 0.0833. In our simulation, the standard Uniform 
+distribution (X1) shows a moderate spread across the 
+entire [0,1] interval. 
+
+By comparison, the small variance dataset (X2 ≈ 0.01) has 
+values tightly clustered around the mean, while the large 
+variance dataset (X3 ≈ 0.087) shows values that are much 
+more widely spread with higher dispersion.
+
+5)The uniform distribution appears flat, indicating equal probability across the interval.
+The Gaussian distribution is concentrated around the mean, showing that values near the center are more likely than those at the extremes.
+
+6) While all distributions are centered around zero, increasing 
+the variance makes them much wider and more spread out. 
+This reflects higher uncertainty, as the values deviate 
+further from the mean and become less predictable. 
+Essentially, the higher the variance, the more "scattered" 
+and dispersed the data points become.
+
+8)The true value is 10.0, but the noisy measurements are scattered 
+around it. By calculating the average, we get an estimate that 
+is very close to the actual value, showing that the random noise 
+tends to cancel itself out over many trials. 
+
+The estimation error represents the small difference between our 
+calculated average and the truth. This error exists because we 
+only have a finite number of samples; as we collect more data, 
+this error would shrink even further toward zero.
+
+9) The positive covariance (~2.02) shows a clear direct relationship, 
+where X and Y tend to increase together. This is supported by 
+the linear pattern in the scatter plot, which confirms a strong 
+positive correlation between the two variables. Essentially, 
+as one value goes up, the other follows a similar upward trend.
+
+10)The estimated value P(A|B) approx 0.402 is close to P(A)=0.4, indicating that A and B are approximately independent.
+This means that knowing B occurs does not significantly change the probability of A.
